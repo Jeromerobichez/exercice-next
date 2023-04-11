@@ -1,0 +1,55 @@
+{
+   
+    "plot": "blabla blabablalala",
+    "genres": [
+        "Short",
+        "Drama",
+        "Fantasy"
+    ],
+    "runtime": 50,
+    "rated": "UNRATED",
+    "cast": [
+        "Linus tordval",
+        "tim berners-lee",
+        "Walter Edwin",
+        "Ethel Jewett"
+    ],
+    "num_mflix_comments": 1,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMzMDcxMjgyNl5BMl5BanBnXkFtZTcwOTgxNjg4Mg@@._V1_SY1000_SX677_AL_.jpg",
+    "title": "Tim and Linus on an Island",
+    "fullplot": "Some O and some 1",
+    "languages": [
+        "English"
+    ],
+    "released": "1912-10-28T00:00:00.000Z",
+    "directors": [
+        "Harold M. Shaw"
+    ],
+    "writers": [
+        "Dorothy G. Shore"
+    ],
+    "awards": {
+        "wins": 1,
+        "nominations": 0,
+        "text": "1 win."
+    },
+    "lastupdated": "2015-08-29 00:27:45.437000000",
+    "year": 1984,
+    "imdb": {
+        "rating": 7.1,
+        "votes": 448,
+        "id": 488
+    },
+    "countries": [
+        "USA"
+    ],
+    "type": "movie",
+    "tomatoes": {
+        "viewer": {
+            "rating": 3.7,
+            "numReviews": 53,
+            "meter": 67
+        },
+        "lastUpdated": "2015-04-27T19:06:35.000Z"
+    }
+}
