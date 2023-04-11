@@ -2,6 +2,71 @@ import clientPromise from "../../../lib/mongodb";
 import {ObjectId} from "mongodb"
 import { log } from "console";
 
+/**
+ * @swagger
+ * /api/movies/{id}:
+ *   post:
+ *     summary: Create a new movie.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The movie ID.
+ *       - in: body
+ *         name: movie
+ *         required: true
+ *         schema:
+ *           type: object
+ *         description: The movie data.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   get:
+ *     summary: Get a movie by ID.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The movie ID.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   put:
+ *     summary: Update a movie by ID.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The movie ID.
+ *       - in: body
+ *         name: movie
+ *         required: true
+ *         schema:
+ *           type: object
+ *         description: The updated movie data.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   delete:
+ *     summary: Delete a movie by ID.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The movie ID.
+ *     responses:
+ *       200:
+ *         description: OK
+ */
+
 export default async function handler(req, res) {
     const idMovie = req.query.id
 

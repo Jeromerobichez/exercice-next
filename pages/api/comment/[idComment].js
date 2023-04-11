@@ -2,6 +2,85 @@ import clientPromise from "../../../lib/mongodb";
 import { ObjectId } from "mongodb"
 import { log } from "console";
 
+/**
+ * @swagger
+ * /api/comments:
+ *   get:
+ *     summary: Get a comment by ID.
+ *     parameters:
+ *       - in: query
+ *         name: idComment
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the comment to get.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   post:
+ *     summary: Create a new comment.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               text:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               movie_id:
+ *                 type: string
+ *         description: The comment to create.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   put:
+ *     summary: Update a comment by ID.
+ *     parameters:
+ *       - in: query
+ *         name: idComment
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the comment to update.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *               text:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               movie_id:
+ *                 type: string
+ *         description: The comment fields to update.
+ *     responses:
+ *       200:
+ *         description: OK
+ *   delete:
+ *     summary: Delete a comment by ID.
+ *     parameters:
+ *       - in: query
+ *         name: idComment
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: The ID of the comment to delete.
+ *     responses:
+ *       200:
+ *         description: OK
+ */
+
+
 export default async function handler(req, res) {
     const idComment = req.query.idComment
 

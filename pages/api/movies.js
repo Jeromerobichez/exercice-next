@@ -2,14 +2,14 @@
 
 import clientPromise from "../../lib/mongodb";
 /**
-* @swagger
-* /api/movies:
-* get:
-* description: Returns movies
-* responses:
-* 200:
-* description: Hello Movies
-*/
+ * @swagger
+ * /api/movies:
+ *   get:
+ *     summary: Get a list of 10 movies.
+ *     responses:
+ *       200:
+ *         description: OK
+ */
 
 export default async function handler(req, res) {
 const client = await clientPromise;

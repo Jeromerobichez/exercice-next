@@ -2,6 +2,15 @@ import clientPromise from "../../lib/mongodb";
 import { ObjectId } from "mongodb"
 import { log } from "console";
 
+/**
+ * @swagger
+ * /api/comments:
+ *   get:
+ *     summary: Get a list of 20 comments.
+ *     responses:
+ *       200:
+ *         description: OK
+ */
 
 export default async function handler(req, res) {
 
